@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kusina ng Pinoy - Tea Palace — Filipino food in Doha, Qatar." />
+  <title>Kusina ng Pinoy - Tea Palace | Filipino Restaurant in Doha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Tea Palace home">
+        <span class="brand-mark">🇵🇭</span>
+        <span>
+          <strong>Tea Palace</strong>
+          <small>Kusina ng Pinoy</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#location">Location</a>
+        <a class="nav-cta" href="https://wa.me/97474440326" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Kusina ng Pinoy • Doha, Qatar</p>
+          <h1>Filipino comfort food, <em>made with heart.</em></h1>
+          <p class="hero-text">
+            From sizzling sisig and classic adobo to halo-halo and pancit,
+            discover a taste of home at Tea Palace.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">View Menu</a>
+            <a class="btn btn-outline" href="#location">Find Us</a>
+          </div>
+          <div class="hero-meta">
+            <span>● Dine-in</span>
+            <span>● Take-out</span>
+            <span>● Catering</span>
+            <span>● Videoke Room</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="menu-original.png" alt="Kusina ng Pinoy - Tea Palace menu" />
+          <div class="hero-card-caption">
+            <span>Our Menu</span>
+            <strong>Filipino favorites in Qatar</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-info" id="about">
+      <div class="container info-grid">
+        <article class="info-card">
+          <span class="info-icon">📍</span>
+          <div>
+            <p class="label">Visit us</p>
+            <h3>Saeed Bin Jubair</h3>
+            <p>Doha, Qatar</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <span class="info-icon">🕓</span>
+          <div>
+            <p class="label">Open daily</p>
+            <h3>4:00 PM – 2:00 AM</h3>
+            <p id="open-status">Checking today's status…</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <span class="info-icon">📞</span>
+          <div>
+            <p class="label">Call / WhatsApp</p>
+            <h3>+974 7444 0326</h3>
+            <p>For orders & inquiries</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Something for everyone</p>
+          <h2>Our Menu</h2>
+          <p>Classic Filipino dishes, snacks, desserts and rice meals. Prices are in QAR.</p>
+        </div>
+
+        <div class="menu-controls">
+          <div class="search-box">
+            <span>⌕</span>
+            <input id="menu-search" type="search" placeholder="Search dishes..." aria-label="Search menu" />
+          </div>
+          <div class="category-tabs" role="tablist" aria-label="Menu categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="appetizer">Appetizer</button>
+            <button class="category-btn" data-category="chicken">Chicken</button>
+            <button class="category-btn" data-category="beef">Beef</button>
+            <button class="category-btn" data-category="soup">Soup</button>
+            <button class="category-btn" data-category="vegetable">Vegetable</button>
+            <button class="category-btn" data-category="seafoods">Seafoods</button>
+            <button class="category-btn" data-category="inihaw">Inihaw</button>
+            <button class="category-btn" data-category="rice">Rice</button>
+            <button class="category-btn" data-category="tapsi">Tapsi Corner</button>
+            <button class="category-btn" data-category="dessert">Dessert</button>
+            <button class="category-btn" data-category="meryenda">Meryenda</button>
+          </div>
+        </div>
+
+        <div class="menu-grid" id="menu-grid"></div>
+        <p class="no-results" id="no-results">No dishes found. Try another search.</p>
+
+        <div class="menu-note">
+          <strong>Note:</strong> Prices and availability may change. Please contact the restaurant for the latest menu.
+        </div>
+
+        <div class="original-menu">
+          <div>
+            <p class="eyebrow">Original menu</p>
+            <h3>See the full menu artwork</h3>
+          </div>
+          <a class="btn btn-dark" href="menu-original.png" target="_blank" rel="noopener">Open Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="location">
+      <div class="container visit-grid">
+        <div class="visit-copy">
+          <p class="eyebrow">Come say hello</p>
+          <h2>Find Tea Palace in Doha</h2>
+          <p class="lead">We're serving Filipino favorites on Saeed Bin Jubair in Doha, Qatar.</p>
+
+          <div class="hours">
+            <div class="hours-head">
+              <h3>Business Hours</h3>
+              <span class="status-pill">Open daily</span>
+            </div>
+            <div class="hours-row"><span>Monday</span><strong>4:00 PM – 2:00 AM</strong></div>
+            <div class="hours-row"><span>Tuesday</span><strong>4:00 PM – 2:00 AM</strong></div>
+            <div class="hours-row"><span>Wednesday</span><strong>4:00 PM – 2:00 AM</strong></div>
+            <div class="hours-row"><span>Thursday</span><strong>4:00 PM – 2:00 AM</strong></div>
+            <div class="hours-row"><span>Friday</span><strong>4:00 PM – 2:00 AM</strong></div>
+            <div class="hours-row"><span>Saturday</span><strong>4:00 PM – 2:00 AM</strong></div>
+            <div class="hours-row"><span>Sunday</span><strong>4:00 PM – 2:00 AM</strong></div>
+          </div>
+
+          <div class="visit-actions">
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Kusina+ng+Pinoy+Tea+Palace+Saeed+Bin+Jubair+Doha+Qatar" target="_blank" rel="noopener">Get Directions</a>
+            <a class="btn btn-outline" href="tel:+97474440326">Call Restaurant</a>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <div class="map-overlay">
+            <span class="map-pin">📍</span>
+            <h3>Kusina ng Pinoy - Tea Palace</h3>
+            <p>Saeed Bin Jubair, Doha, Qatar</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kusina+ng+Pinoy+Tea+Palace+Saeed+Bin+Jubair+Doha+Qatar" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="map-grid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <span class="brand-mark">🇵🇭</span>
+          <span><strong>Tea Palace</strong><small>Kusina ng Pinoy</small></span>
+        </div>
+        <p>We don't copy the best.<br><em>We create the Next Best.</em></p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://wa.me/97474440326" target="_blank" rel="noopener">WhatsApp +974 7444 0326</a>
+        <span>Saeed Bin Jubair, Doha, Qatar</span>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> Tea Palace. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
