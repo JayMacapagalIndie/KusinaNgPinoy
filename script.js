@@ -176,3 +176,4 @@ function updateQatarStatus() {
 updateQatarStatus();
 setInterval(updateQatarStatus, 60000);
 renderMenu();
+
